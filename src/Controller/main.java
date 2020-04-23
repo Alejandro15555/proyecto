@@ -19,6 +19,7 @@ public class main {
 		OperacionMovil.añadirRam(movil1, 8);
 		
 		System.out.println(movil1.toString());
+		System.out.println(movil1.getCapacidad());
 
 	}
 
