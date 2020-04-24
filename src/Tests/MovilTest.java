@@ -16,10 +16,27 @@ class MovilTest {
 		assertEquals(16, movil2.getRam());
 	}
 	
-	void quitarCapacidad() {
+	void testQuitarCapacidad() {
 		Movil movil3 = new Movil("redmi", 8, "azul", 20);
 		OperacionMovil.quitarCapacidad(movil3, 10);
 		assertEquals(10, movil3.getCapacidad());
 	}
+	
+	void testQuitarRam() {
+		Movil movil2 = new Movil("redmi", 8, "azul", 20);
+		OperacionMovil.añadirRam(movil2, 2);
+		assertEquals(6, movil2.getRam());
+	}
+	
+	void testAñadirCapacidad() {
+		Movil movil3 = new Movil("redmi", 8, "azul", 20);
+		OperacionMovil.quitarCapacidad(movil3, 10);
+		assertEquals(30, movil3.getCapacidad());
+	}
+	
+	
+	
+	
+	
 
 }

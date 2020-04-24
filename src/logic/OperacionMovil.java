@@ -12,5 +12,13 @@ public class OperacionMovil {
 	public static void quitarCapacidad(Movil movil, int capacidad) {
 		movil.setCapacidad(movil.getCapacidad()-capacidad);
 	}
+	
+	public static void quitarRam(Movil movil, int ram) {
+		movil.setRam(movil.getRam()-ram);
+	}
+	
+	public static void anumentarCapacidad(Movil movil, int capacidad) {
+		movil.setCapacidad(movil.getCapacidad()+capacidad);
+	}
 
 }

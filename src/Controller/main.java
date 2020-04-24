@@ -20,6 +20,10 @@ public class main {
 		
 		System.out.println(movil1.toString());
 		System.out.println(movil1.getCapacidad());
+		
+		OperacionMovil.quitarRam(movil1, 2);
+		System.out.println(movil1.toString());
+		
 
 	}
 
